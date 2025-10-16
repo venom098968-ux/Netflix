@@ -94,7 +94,7 @@ margin: 19px auto;
   padding: 3px 8px;
   font-weight: 400;
   background-color: rgba(248, 243, 243, 0.021);
-  border: 1px solid white;
+  border: 1px solid rgb(255, 0, 0);
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -367,6 +367,9 @@ footer .question{
     gap: 40px;
   }
   
+  nav img{
+    width: 90px;
+  }
 }
 
 @media (max-width: 599px) {
@@ -379,5 +382,15 @@ footer .question{
   .typebtn{
     display: flex;
     flex-direction: column;
+  }
+  .hero> .op{
+    font-size: 32px;
+  }
+  .hero> .op2 {
+    font-size: 16px;
+  }
+
+  .hero> .op3 {
+    font-size: 16px;
   }
 }
