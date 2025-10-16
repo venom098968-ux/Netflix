@@ -6,13 +6,13 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .main {
   background-image: url(asits/images/bg.jpg.jpg);
   position: relative;
-  height: 70vh;
+  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);
@@ -21,7 +21,7 @@ body {
 .box {
   position: absolute;
   top: 0px;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   opacity: 0.69;
   background-color: black;
@@ -351,4 +351,29 @@ footer .question{
   font-size: 14px;
   gap: 23px;
 
+}
+@media (max-width: 1263px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+}
+@media (max-width: 956px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+}
+
+@media (max-width: 591px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+  }
+  
 }
