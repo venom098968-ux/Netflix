@@ -12,16 +12,16 @@ body {
 .main {
   background-image: url(asits/images/bg.jpg.jpg);
   position: relative;
-  height: 100vh;
+  height: 90vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1200px, 100vw);
+  background-size: cover;
 }
 
 .box {
   position: absolute;
   top: 0px;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   opacity: 0.69;
   background-color: black;
@@ -29,11 +29,11 @@ body {
 
 nav {
   display: flex;
-  max-width: 60vw;
-  margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 20px;
   height: 62px;
+  max-width: 100%;
 }
 
 nav img {
@@ -103,26 +103,27 @@ margin: 19px auto;
 .btn-red {
   background-color: red;
   color: white;
-  padding: 5px 24px;
+  padding: 5px 29px;
   font-size: 20px;
   border-radius: 4px;
-  font-family: Arial,
-
-}
+  font-family: Arial, 
+  }
 
 .btn-red-sm {
   background-color: red;
   color: white;
-
 }
+  
 
 .main input {
-  padding: 7px 101px 8px 14px;
-  font-size: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
   border-radius: 4px;
   background-color: rgba(23, 23, 23, 0.7);
   border: 1px solid rgba(255, 254, 254, 0.7);
   color: white;
+  width: 100%;
+  max-width: 350px;
 }
 
 .typebtn {
@@ -211,6 +212,27 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+.cta {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  white-space: nowrap;  /* <-- keeps text in one line */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #d00000;
+}
+
 
 /* --- SECTION STYLES --- */
 .reasons2 {
@@ -372,25 +394,81 @@ footer .question{
   }
 }
 
-@media (max-width: 599px) {
-  .footer{
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 40px;
+/* --- Responsive Fixes --- */
+@media (max-width: 956px) {
+  nav {
+    max-width: 100%;
+    padding: 0 20px;
   }
-  
-  .typebtn{
-    display: flex;
-    flex-direction: column;
+
+  .main {
+    height: 80vh;
+    background-size: cover;
   }
-  .hero> .op{
-    font-size: 32px;
+
+  .hero {
+    padding: 20px;
+    text-align: center;
   }
-  .hero> .op2 {
+
+  .hero span.op {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero span.op2,
+  .hero span.op3 {
     font-size: 16px;
   }
 
-  .hero> .op3 {
+  .typebtn {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .typebtn input {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .btn-red {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  footer {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero span {
+    text-align: center;
+  }
+
+  .hero span.op {
+    font-size: 28px;
+  }
+
+  .hero span.op2,
+  .hero span.op3 {
     font-size: 16px;
+  }
+
+  .typebtn {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .typebtn input {
+    width: 90%;
+  }
+
+  .btn-red {
+    width: 90%;
   }
 }
