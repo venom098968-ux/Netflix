@@ -369,11 +369,15 @@ footer .question{
   
 }
 
-@media (max-width: 591px) {
+@media (max-width: 599px) {
   .footer{
     display: grid;
     grid-template-columns: 1fr ;
     gap: 40px;
   }
   
+  .typebtn{
+    display: flex;
+    flex-direction: column;
+  }
 }
