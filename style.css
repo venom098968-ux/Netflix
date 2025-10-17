@@ -43,7 +43,7 @@ body {
 .box {
   position: absolute;
   top: 0px;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   opacity: 0.69;
   background-color: black;
@@ -499,4 +499,5 @@ footer .question{
   .btn-red {
     width: 90%;
   }
+
 }
